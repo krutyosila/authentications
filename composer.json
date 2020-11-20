@@ -1,0 +1,39 @@
+{
+    "name": "krutyosila/authentications",
+    "description": "Login Authentications Log with Country",
+    "keywords": [
+        "authentications",
+        "laravel",
+        "plugin",
+        "log",
+        "login"
+    ],
+    "homepage": "https://github.com/krutyosila/authentications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krutyosila",
+            "email": "info@soyturk.com"
+        }
+    ],
+    "require": {
+        "ua-parser/uap-php": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Krutyosila\\Authentications\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Krutyosila\\Authentications\\AuthenticationsProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
