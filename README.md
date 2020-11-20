@@ -42,5 +42,16 @@ response example
     "updated_at" => "2020-11-20 22:47:14"
 ```
 
+example model for last logins
+
+Add User Model
+```
+public function lastAuthentications($limit = 5)
+{
+    return $this->authentications()->orderBy('created_at', 'DESC')->simplePaginate($limit);
+}
+```
+
+
 
 
